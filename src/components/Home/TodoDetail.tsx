@@ -44,11 +44,13 @@ const TodoDetail: React.FC<TodoDetailProp> = ({ setShowDetail, todo }) => {
               height={20}
               alt="calendar"
             />
-            <p>{new Date(todo?.date).toDateString()}</p>
+            <p className="text-[1.6rem]">
+              {new Date(todo?.date).toDateString()}
+            </p>
           </span>
           <span className="flex gap-2 items-center">
             <Image src={"/clock.svg"} width={20} height={20} alt="calendar" />
-            <p>
+            <p className="text-[1.4rem]">
               {addAMPM(todo?.start_time)} - {addAMPM(todo?.end_time)}
             </p>
           </span>

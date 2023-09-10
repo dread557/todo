@@ -75,11 +75,11 @@ const EditTask: React.FC<NewTodo> = ({
         <textarea
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
-          className="min-h-[140px] border w-full p-3 rounded-lg  outline-gray-300"
+          className="min-h-[140px] border w-full p-3 rounded-lg text-[1.6rem] outline-gray-300"
         />
         <div className="flex flex-col sm:flex-row justify-between gap-10 mt-4">
           <button
-            className="px-4 text-sm border rounded-lg h-10"
+            className="px-4 text-sm border text-[1.6rem] rounded-lg h-10"
             onClick={openCalendar}
           >
             {startDate?.toLocaleDateString()}
@@ -87,13 +87,13 @@ const EditTask: React.FC<NewTodo> = ({
 
           <div className="flex justify-between gap-2">
             <input
-              className=" w-[30%] sm:w-full py-[10px] px-2 border h-10 rounded-lg"
+              className=" w-[30%] sm:w-full py-[10px] px-2 text-[1.6rem] border h-10 rounded-lg"
               type="time"
               value={newStartTime}
               onChange={(e) => setNewStartTime(e.target.value)}
             />
             <input
-              className=" w-[30%] sm:w-full py-[10px] px-2 border h-10 rounded-lg"
+              className=" w-[30%] sm:w-full py-[10px] text-[1.6rem] px-2 border h-10 rounded-lg"
               type="time"
               value={newEndTime}
               onChange={(e) => setNewEndTime(e.target.value)}
@@ -103,7 +103,7 @@ const EditTask: React.FC<NewTodo> = ({
         <div className="flex justify-between items-center mt-4">
           <span className="flex gap-2">
             <Image src={"/bell.svg"} alt="bell" width={16} height={16} />
-            <p>10 Minute before</p>
+            <p className="text-[1.6rem]">10 Minute before</p>
           </span>
           <Image src={"/x-close.svg"} alt="close" width={16} height={16} />
         </div>

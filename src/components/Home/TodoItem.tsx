@@ -38,13 +38,13 @@ const TodoItem: React.FC<TodoComponentProps> = ({
       <div className="flex items-center gap-3">
         <input type="checkbox" />
         <div className="flex flex-col gap-2 items-start">
-          <p className="text-gray-900 font-medium">{task}</p>
-          <p className="text-gray-600 text-sm">
+          <p className="text-[1.6rem] text-gray-900 font-medium">{task}</p>
+          <p className="text-gray-600 text-[1.4rem]">
             {addAMPM(start_time)} - {addAMPM(end_time)}
           </p>
         </div>
       </div>
-      <p>{new Date(date).toDateString()}</p>
+      <p className="text-[1.6rem]">{new Date(date).toDateString()}</p>
     </button>
   );
 };

@@ -57,7 +57,7 @@ const Main = () => {
       </section>
       <section className="flex mt-14">
         <section className="w-full md:w-[70%] pr-5">
-          <h1>My Todos</h1>
+          <h1 className="text-[1.6rem]">My Todos</h1>
           {isLoading ? (
             <div className="flex items-center justify-center">
               <Image
