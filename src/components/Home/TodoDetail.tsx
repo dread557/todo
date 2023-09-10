@@ -35,7 +35,7 @@ const TodoDetail: React.FC<TodoDetailProp> = ({ setShowDetail, todo }) => {
         </button>
       </header>
       <div>
-        <h4 className="font-bold text-[1.5rem] mb-8">{todo?.task}</h4>
+        <h4 className="font-bold text-[1.8rem] mb-8">{todo?.task}</h4>
         <div className="flex flex-col gap-[9px]">
           <span className="flex gap-2 items-center">
             <Image
